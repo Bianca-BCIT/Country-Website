@@ -1,9 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
@@ -54,7 +72,97 @@ nav ul {
     position: relative;
 }
 
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 6em;
+}
 
+p {
+	
+}
+
+
+/* Elements
+--------------------------------------------- */
+/*
+nav ul {
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+*/
+
+@media (min-width: 500px) {
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+}
+ol {
+	
+}
+
+dl {
+	
+}
+
+figure {
+	
+}
+
+table {
+	
+}
+
+/* Links
+--------------------------------------------- */
+@media (min-width: 500px) {
+    nav li a{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 20px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    a:visited {
+        color: #fff;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:focus {
+        color: #fff;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header 
+--------------------------------------------- */
 @media (min-width: 500px) {
 
     header {
@@ -68,7 +176,6 @@ nav ul {
     }
 
     .Denmark {
-       margin-right: auto;
        margin-left: 40px;
        text-decoration: none;
        color: #fff;
@@ -78,18 +185,63 @@ nav ul {
 
     nav{
         margin-right: 30px;
-    }
-
-    nav ul {
         display: flex;
-        list-style-type: none;
-        justify-content: space-between;
+        align-items: center;
     }
 
-    nav li a{
-        text-decoration: none;
-        color: #fff;
-        margin-left: 20px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    }
 }
+
+/* Main
+--------------------------------------------- */
+/* Specific styles for each page go here */
+
+/* Home Page */
+.title-section {
+    position: relative;
+}
+
+.title-section h1 {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.title-section img {
+    display: block;
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.quote-section img {
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+/* History Page */
+
+/* Culture Page */
+
+/* Credits Page */
+
+
+
+/* Footer
+--------------------------------------------- */
+
+
+
