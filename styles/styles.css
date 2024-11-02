@@ -88,19 +88,23 @@ table {
     }
 
     a:visited {
-        
+        color: #fff;
     }
 
     a:hover {
-        
+        color: #fff;
     }
 
     a:focus {
-        
+        color: #fff;
     }
 
     a:active {
-        
+        text-decoration: underline;
+    }
+
+    .menu-toggle {
+        display: none;
     }
 }
 
@@ -197,9 +201,4 @@ table {
 --------------------------------------------- */
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
