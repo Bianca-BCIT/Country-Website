@@ -22,6 +22,7 @@
 
 /* Typography
 --------------------------------------------- */
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
@@ -29,12 +30,10 @@ body {
     color: black;
 }
 
-
 h1 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 6em;
 }
-
 
 /* Elements
 --------------------------------------------- */
@@ -136,7 +135,6 @@ a:active {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-
 
 
 /*--------------------------------------------------------------
@@ -242,15 +240,18 @@ header {
 .quote-section img {
     width: 100px;
     padding-bottom: 20px;
+    padding-top: 40px;
 }
 
 .page-containers {
-    padding: 20px;
+    margin-top: 50px;
+    padding: 20px 20px 140px 20px;
     display: grid;
-    grid-template-columns: 28rem 28rem 28rem;
-    gap: 10px;
+    grid-template-rows: repeat(3, 10rem);
+    gap: 130px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    height: 900px;
 }
 
 .page-containers article {
@@ -264,15 +265,33 @@ header {
     object-fit: cover;
     filter: brightness(50%);
 }
-
 .page-containers h2 {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-   color: #fff;
-   z-index: 90;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 90;
+    font-family: Geneva, Tahoma, sans-serif;
+ }
+
+@media (min-width: 600px) {
+    .page-containers {
+        position: relative;
+        grid-template-rows: repeat(2, 35rem);
+        gap: 30px;
+        height: 1800px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page-containers {
+        position: relative;
+        grid-template-columns: repeat(3, 28rem);
+        gap: 30px;
+        height: 600px;
+    }
 }
 
 /* History Page */
@@ -286,5 +305,18 @@ header {
 /* Footer
 --------------------------------------------- */
 
+footer {
+    background-color: #750000;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.24rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
