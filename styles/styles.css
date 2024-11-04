@@ -434,6 +434,28 @@ header {
     width: 400px;
 }
 
+.table {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.table table {
+    width: 410px;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.table table tr {
+    height: 40px;
+}
+
+.table table td {
+    border: 2px solid black;
+    text-align: left;
+    padding-left: 20px;
+}
+
 @media (min-width: 600px) {  
     .history {
         display: flex;
@@ -442,6 +464,10 @@ header {
 
     .history p {
         text-align: left;
+    }
+
+    .table table {
+        width: 600px;
     }
 
 }
