@@ -222,6 +222,7 @@ header {
     height: 30rem;
     width: 100%;
     object-fit: cover;
+    filter: brightness(30%);
 }
 
 .quote-section {
@@ -294,9 +295,82 @@ header {
     }
 }
 
-/* History Page */
+/* Destinations Page */
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center; 
+}
 
-/* Culture Page */
+.description p {
+    text-align: center;
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.destinations article {
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    gap: 20px;
+    border: 6px solid #750000;
+    border-radius: 7px;
+}
+
+.destinations article img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.destinations article p {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 600px) {
+    .description {
+        max-width: 700px;
+    }
+
+    .destinations {
+        padding-bottom: 40px;
+    }
+
+    .destinations article {
+        width: 900px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .destinations article img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .destinations article p {
+        padding: 0;
+    }
+}
+/* Food Page */
 
 /* Credits Page */
 
