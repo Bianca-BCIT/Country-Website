@@ -93,7 +93,7 @@ a:active {
     text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
     .nav-links {
         display: flex;
         position: static;
@@ -168,7 +168,7 @@ header {
     width: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 
     header {
         background-color: #750000;
@@ -285,7 +285,7 @@ header {
     font-family: Geneva, Tahoma, sans-serif;
  }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
     .page-containers {
         position: relative;
         grid-template-rows: repeat(2, 35rem);
@@ -294,7 +294,7 @@ header {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64) {
     .page-containers {
         position: relative;
         grid-template-columns: repeat(3, 28rem);
@@ -354,7 +354,7 @@ header {
     padding: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
     .description {
         max-width: 700px;
     }
@@ -407,7 +407,7 @@ header {
         aspect-ratio: 1 / 1;
     }
 
-@media (min-width: 600px) {  
+@media (min-width: 37.5em) {  
 
     .food-grid {
         justify-content: center;
@@ -456,7 +456,7 @@ header {
     padding-left: 20px;
 }
 
-@media (min-width: 600px) {  
+@media (min-width: 37.5em) {  
     .history {
         display: flex;
         flex-direction: row;
@@ -482,6 +482,10 @@ header {
 .page-credits article {
     max-width: 260px;
     overflow-wrap: break-word;
+}
+
+.page-credits article h2 {
+    color: #750000;
 }
 
 .contact-form {
@@ -513,7 +517,7 @@ textarea {
     border: 1px solid #9c9c9c;
 }
 
-@media (min-width: 600px) { 
+@media (min-width: 37.5em) { 
     .page-credits {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -521,6 +525,36 @@ textarea {
 
     .page-credits article {
         max-width: 400px;
+    }
+
+    form {
+        padding: 4em 6em 4em 6em;
+        border: 5px solid #750000;
+    }
+
+    label {
+        font-size: 1.2em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
+    }
+
+    #name {
+        width: 400px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    #mail {
+        width: 400px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    #msg {
+        width: 400px;
+        height: 100px;
+        border-radius: 5px;
+        vertical-align: top;
     }
 
 }
