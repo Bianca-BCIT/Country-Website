@@ -472,8 +472,58 @@ header {
 
 }
 /* Credits Page */
+.page-credits {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px;
+    gap: 40px;
+}
 
+.page-credits article {
+    max-width: 260px;
+    overflow-wrap: break-word;
+}
 
+.contact-form {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    padding: 0.9em;
+    border: 1px solid #750000;
+    border-radius: 1em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input,
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 150px;
+    box-sizing: border-box;
+    border: 1px solid #9c9c9c;
+}
+
+@media (min-width: 600px) { 
+    .page-credits {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
+
+    .page-credits article {
+        max-width: 400px;
+    }
+
+}
 
 /* Footer
 --------------------------------------------- */
