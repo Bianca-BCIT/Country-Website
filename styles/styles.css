@@ -41,8 +41,8 @@ h1 {
 .nav-links {
     display: none;
     position: relative;
-    top: 4.5rem;
-    left: 35px;
+    top: 4rem;
+    left: 0px;
     right: 0;
     float: right;
     padding: 10px;
@@ -50,22 +50,6 @@ h1 {
     list-style-type: none;
     background-color: black;
     border-radius: 5%;
-}
-
-ol {
-	
-}
-
-dl {
-	
-}
-
-figure {
-	
-}
-
-table {
-	
 }
 
 /* Links
@@ -215,6 +199,7 @@ header {
     margin: 0;
     color: #fff;
     text-align: center;
+    font-size: 4em;
 }
 
 .title-section img {
@@ -292,14 +277,22 @@ header {
         gap: 30px;
         height: 1800px;
     }
+
+    .title-section h1 {
+        font-size: 6em;
+    }
 }
 
-@media (min-width: 64) {
+@media (min-width: 64em) {
     .page-containers {
         position: relative;
         grid-template-columns: repeat(3, 28rem);
         gap: 30px;
         height: 600px;
+    }
+
+    .title-section h1 {
+        font-size: 6em;
     }
 }
 
@@ -394,8 +387,8 @@ header {
     }
 
     .grid-item{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         padding: 40px;
         border: 2px solid #750000;
     }
@@ -431,7 +424,7 @@ header {
 }
 
 .history img {
-    width: 400px;
+    width: 300px;
 }
 
 .table {
@@ -440,7 +433,7 @@ header {
 }
 
 .table table {
-    width: 410px;
+    width: 310px;
     margin: auto;
     border: 2px solid black;
     border-collapse: collapse;
@@ -490,6 +483,7 @@ header {
 
 .contact-form {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 form {
@@ -556,7 +550,6 @@ textarea {
         border-radius: 5px;
         vertical-align: top;
     }
-
 }
 
 /* Footer
