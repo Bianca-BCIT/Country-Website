@@ -73,6 +73,9 @@ a:focus {
     color: #fff;
 }
 
+a.screen-reader-text:focus {
+    color: black;
+}
 a:active {
     text-decoration: underline;
 }
